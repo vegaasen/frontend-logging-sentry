@@ -9,7 +9,11 @@ It basically defines a single resource, `@sentry/browser`. If the version change
 
 ## Build
 
-todo.
+```
+yarn test
+yarn build
+yarn publish
+```
 
 ## Usage
 
@@ -18,9 +22,9 @@ todo.
 ### Node/Yarn dependency
 
 ```
-yarn add 
+yarn add @bring/logging-sentry
 # [OR] 
-npm add 
+npm add @bring/logging-sentry
 ```
 
 ### Configuration
@@ -54,12 +58,36 @@ const configuration = require('./config/config');
 
 ### Initializing
 
-todo.
+```
+import {Sentrylogger} from '@bring/logging-sentry';
+// [OR]
+const Sentrylogger = require('@bring/logging-sentry');
+```
+
+From there, you can simply perform the following initialization action:
+
+```
+Sentrylogger.initialize(configuration)
+// [OR]
+Sentrylogger.initialize({url: '', user: {id: ''}...})
+```
 
 ### Logging
 
-todo.
+```
+import {Logging} from '@bring/logging-sentry';
+// [OR]
+const Logging = require('@bring/logging-sentry');
+```
+
+Then just call the methods you require for the particular logged event:
+
+* `Logging.logInfo(..)`
+* `Logging.logWarn(..)`
+* `Logging.logError(..)`
+* `Logging.logException(..)`
+* ...
 
 ## Contribution
 
-todo.
+:-)
