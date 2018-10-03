@@ -10,7 +10,7 @@ const bundleConfig = {
   input: 'src/index.ts',
   output: {
     format: 'iife',
-    name: 'Sentry',
+    name: 'Bring',
     sourcemap: true,
   },
   context: 'window',

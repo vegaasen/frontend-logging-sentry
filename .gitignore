@@ -1,5 +1,9 @@
 # Generated
-build/
+build
+dist
+.rpt2_cache
+lint-results.json
+coverage
 
 # Usage
 node_modules/

@@ -1,10 +1,24 @@
 {
   "extends": "./tsconfig.build.json",
-  "include": ["src/**/*", "test/**/*"],
-  "exclude": ["dist"],
+  "include": [
+    "src/**/*",
+    "test/**/*",
+    "node_modules/karma-typescript/examples/gulp/src/bar/typings/jasmine/jasmine.d.ts"
+  ],
+  "exclude": [
+    "dist"
+  ],
   "compilerOptions": {
+    "lib": ["es2015", "dom"],
+    "module": "commonjs",
     "rootDir": ".",
-    "types": ["node", "mocha", "chai", "sinon"],
-    "plugins": [{ "name": "tslint-language-service" }]
+    "types": [
+      "node"
+    ],
+    "plugins": [
+      {
+        "name": "tslint-language-service"
+      }
+    ]
   }
 }
