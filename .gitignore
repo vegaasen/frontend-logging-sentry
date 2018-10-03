@@ -1,0 +1,8 @@
+# Generated
+build/
+
+# Usage
+node_modules/
+
+# IDE
+.idea
