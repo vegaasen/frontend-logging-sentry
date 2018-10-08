@@ -10,7 +10,7 @@ const bundleConfig = {
   input: 'src/index.ts',
   output: {
     format: 'iife',
-    name: 'Bring',
+    name: 'Vegaasen',
     sourcemap: true,
   },
   context: 'window',
@@ -27,7 +27,7 @@ const bundleConfig = {
     commonjs(),
     license({
       sourcemap: true,
-      banner: `/*! @bring/logging-sentry <%= pkg.version %> (${commitHash}) | https://github.com/bring/logging-sentry */`,
+      banner: `/*! logging-sentry <%= pkg.version %> (${commitHash}) | https://github.com/vegaasen/logging-sentry */`,
     }),
   ],
 };

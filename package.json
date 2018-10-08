@@ -1,5 +1,5 @@
 {
-  "name": "@bring/logging-sentry",
+  "name": "ogging-sentry",
   "version": "1.0.5",
   "description": "-",
   "repository": {
@@ -16,8 +16,7 @@
   "author": "Vegard Aasen",
   "license": "Unlicense",
   "publishConfig": {
-    "access": "public",
-    "registry": "http://ci.bd.bring.no/nexus/repository/npm-bring/"
+    "access": "public"
   },
   "scripts": {
     "build": "rollup --config",

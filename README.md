@@ -1,11 +1,11 @@
-@bring/logging-sentry
+logging-sentry
 ==
 
 ## Introduction
 
 More and more of our frontend-applications have a requirement for logging. To avoid having a separate configuration and implementation of Sentry within all of these, this simple library can be used instead.
 
-It basically defines a single resource, `@sentry/browser`. If the version changes, library alters or similar, we should only have to upgrade the package once and it will work all over Bring' applications. 
+It basically defines a single resource, `@sentry/browser`. If the version changes, library alters or similar, we should only have to upgrade the package once and it will work all over our applications. 
 
 ## Build
 
@@ -22,9 +22,9 @@ todo.
 ### Node/Yarn dependency
 
 ```
-yarn add @bring/logging-sentry
+yarn add logging-sentry
 # [OR] 
-npm add @bring/logging-sentry
+npm add logging-sentry
 ```
 
 ### Configuration
@@ -59,9 +59,9 @@ const configuration = require('./config/config');
 ### Initializing
 
 ```
-import {Sentrylogger} from '@bring/logging-sentry';
+import {Sentrylogger} from 'logging-sentry';
 // [OR]
-const Sentrylogger = require('@bring/logging-sentry');
+const Sentrylogger = require('logging-sentry');
 ```
 
 From there, you can simply perform the following initialization action:
@@ -75,9 +75,9 @@ Sentrylogger.initialize({url: '', user: {id: ''}...})
 ### Logging
 
 ```
-import {Logging} from '@bring/logging-sentry';
+import {Logging} from 'logging-sentry';
 // [OR]
-const Logging = require('@bring/logging-sentry');
+const Logging = require('logging-sentry');
 ```
 
 Then just call the methods you require for the particular logged event:
